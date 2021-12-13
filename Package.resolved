@@ -1,0 +1,61 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "ErrorMessage",
+        "repositoryURL": "https://github.com/jeremyabannister/ErrorMessage",
+        "state": {
+          "branch": null,
+          "revision": "1468d23676022016c33870feb501b29939ff5722",
+          "version": "0.1.1"
+        }
+      },
+      {
+        "package": "ExpressionErgonomics",
+        "repositoryURL": "https://github.com/jeremyabannister/ExpressionErgonomics",
+        "state": {
+          "branch": null,
+          "revision": "ded628c4382757399ffe3f01bb6864b316e72fb9",
+          "version": "0.1.8"
+        }
+      },
+      {
+        "package": "ProperValueType",
+        "repositoryURL": "https://github.com/jeremyabannister/ProperValueType",
+        "state": {
+          "branch": null,
+          "revision": "fff4702852d0658676da1896c93625e7ff4b0f7d",
+          "version": "0.1.0"
+        }
+      },
+      {
+        "package": "Testable",
+        "repositoryURL": "https://github.com/jeremyabannister/Testable",
+        "state": {
+          "branch": null,
+          "revision": "5eb6bfd344bbf0fea93cf59027a13dcb52825a47",
+          "version": "0.1.2"
+        }
+      },
+      {
+        "package": "VerboseEquatable",
+        "repositoryURL": "https://github.com/jeremyabannister/VerboseEquatable",
+        "state": {
+          "branch": null,
+          "revision": "1cc7ee4342ab5b5f6c1a2e6581fee21d2fb5ea42",
+          "version": "0.1.4"
+        }
+      },
+      {
+        "package": "XCTestToolkit",
+        "repositoryURL": "https://github.com/jeremyabannister/XCTestToolkit",
+        "state": {
+          "branch": null,
+          "revision": "12e9e9cb6ae61489a5e872b7e086db9b03f2ea2e",
+          "version": "0.1.2"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
