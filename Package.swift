@@ -21,7 +21,7 @@ let package = Package(
         ),
         .package(
             url: "https://github.com/jeremyabannister/ReferenceType",
-            from: "0.1.0"
+            from: "0.1.1"
         ),
         .package(
             url: "https://github.com/jeremyabannister/VerboseEquatable",
