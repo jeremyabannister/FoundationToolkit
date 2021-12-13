@@ -16,25 +16,33 @@ let package = Package(
     ],
     dependencies: [
         .package(
+            url: "https://github.com/jeremyabannister/ProperValueType",
+            from: "0.1.0"
+        ),
+        .package(
+            url: "https://github.com/jeremyabannister/ReferenceType",
+            from: "0.1.0"
+        ),
+        .package(
             url: "https://github.com/jeremyabannister/VerboseEquatable",
             from: "0.1.4"
         ),
-        .package(
-            url: "https://github.com/jeremyabannister/ProperValueType",
-            from: "0.1.0"
-        )
     ],
     targets: [
         .target(
             name: "FoundationToolkit",
-            dependencies: []
+            dependencies: [
+                "ProperValueType",
+                "ReferenceType"
+            ]
         ),
         .target(
             name: "FoundationTestToolkit",
             dependencies: [
                 "FoundationToolkit",
+                .product(name: "ProperValueTypeTestToolkit", package: "ProperValueType"),
+                .product(name: "ReferenceTypeTestToolkit", package: "ReferenceType"),
                 .product(name: "VerboseEquatableTestToolkit", package: "VerboseEquatable"),
-                .product(name: "ProperValueTypeTestToolkit", package: "ProperValueType")
             ]
         ),
         .testTarget(

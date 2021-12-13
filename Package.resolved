@@ -29,6 +29,15 @@
         }
       },
       {
+        "package": "ReferenceType",
+        "repositoryURL": "https://github.com/jeremyabannister/ReferenceType",
+        "state": {
+          "branch": null,
+          "revision": "df906ebeb31f2de16e3cf6b0bc38dc903fee8361",
+          "version": "0.1.1"
+        }
+      },
+      {
         "package": "Testable",
         "repositoryURL": "https://github.com/jeremyabannister/Testable",
         "state": {

@@ -7,3 +7,5 @@
 
 ///
 @_exported import Foundation
+@_exported import ProperValueType
+@_exported import ReferenceType

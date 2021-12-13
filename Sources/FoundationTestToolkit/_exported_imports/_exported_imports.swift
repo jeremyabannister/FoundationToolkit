@@ -7,5 +7,6 @@
 
 ///
 @_exported import FoundationToolkit
-@_exported import VerboseEquatableTestToolkit
 @_exported import ProperValueTypeTestToolkit
+@_exported import ReferenceTypeTestToolkit
+@_exported import VerboseEquatableTestToolkit
