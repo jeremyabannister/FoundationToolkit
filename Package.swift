@@ -36,6 +36,7 @@ let package = Package(
         .target(
             name: "FoundationToolkit",
             dependencies: [
+                "ErrorMessage",
                 "ProperValueType",
                 "ReferenceType"
             ]
