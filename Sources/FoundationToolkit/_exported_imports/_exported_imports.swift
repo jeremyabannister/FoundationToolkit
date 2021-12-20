@@ -7,5 +7,6 @@
 
 ///
 @_exported import Foundation
+@_exported import ErrorMessage
 @_exported import ProperValueType
 @_exported import ReferenceType

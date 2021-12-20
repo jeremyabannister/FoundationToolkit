@@ -16,6 +16,10 @@ let package = Package(
     ],
     dependencies: [
         .package(
+            url: "https://github.com/jeremyabannister/ErrorMessage",
+            from: "0.1.1"
+        ),
+        .package(
             url: "https://github.com/jeremyabannister/ProperValueType",
             from: "0.1.0"
         ),
