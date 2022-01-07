@@ -99,4 +99,10 @@ public extension Collection {
     func hasIndex (_ index: Index) -> Bool {
         self.indices.contains(index)
     }
+    
+    /// Returns the only element in the collection if the collection has exactly 1 element, otherwise returns nil.
+    var only: Element? {
+        guard self.count == 1 else { return nil }
+        return self.first
+    }
 }
