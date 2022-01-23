@@ -40,6 +40,7 @@ public extension URLRequest {
                         }
                     }
                 )
+                .resume()
         }
     }
 }
