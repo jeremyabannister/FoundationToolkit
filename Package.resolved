@@ -2,6 +2,15 @@
   "object": {
     "pins": [
       {
+        "package": "CollectionConcurrencyKit",
+        "repositoryURL": "https://github.com/jeremyabannister/CollectionConcurrencyKit",
+        "state": {
+          "branch": null,
+          "revision": "3f4db6ff4e039d768332c7a5fdcee7c021a147a0",
+          "version": "0.2.2"
+        }
+      },
+      {
         "package": "ErrorMessage",
         "repositoryURL": "https://github.com/jeremyabannister/ErrorMessage",
         "state": {
