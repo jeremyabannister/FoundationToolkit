@@ -10,3 +10,4 @@
 @_exported import ErrorMessage
 @_exported import ProperValueType
 @_exported import ReferenceType
+@_exported import CollectionConcurrencyKit

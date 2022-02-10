@@ -15,45 +15,93 @@ let package = Package(
         ),
     ],
     dependencies: [
+        
+        ///
         .package(
-            url: "https://github.com/jeremyabannister/ErrorMessage",
-            from: "0.1.1"
+            url: "https://github.com/jeremyabannister/CollectionConcurrencyKit",
+            from: "0.2.2"
         ),
-        .package(
-            url: "https://github.com/jeremyabannister/ProperValueType",
-            from: "0.1.0"
-        ),
+        
+        ///
         .package(
             url: "https://github.com/jeremyabannister/ReferenceType",
             from: "0.1.1"
         ),
+        
+        ///
+        .package(
+            url: "https://github.com/jeremyabannister/ProperValueType",
+            from: "0.1.0"
+        ),
+        
+        ///
         .package(
             url: "https://github.com/jeremyabannister/VerboseEquatable",
             from: "0.1.4"
         ),
+        
+        ///
+        .package(
+            url: "https://github.com/jeremyabannister/ErrorMessage",
+            from: "0.1.1"
+        ),
     ],
     targets: [
+        
+        ///
         .target(
             name: "FoundationToolkit",
             dependencies: [
+                
+                ///
                 "ErrorMessage",
+                
+                ///
                 "ProperValueType",
-                "ReferenceType"
+                
+                ///
+                "ReferenceType",
+                
+                ///
+                "CollectionConcurrencyKit"
             ]
         ),
+        
+        ///
         .target(
             name: "FoundationTestToolkit",
             dependencies: [
+                
+                ///
                 "FoundationToolkit",
-                .product(name: "ProperValueTypeTestToolkit", package: "ProperValueType"),
-                .product(name: "ReferenceTypeTestToolkit", package: "ReferenceType"),
-                .product(name: "VerboseEquatableTestToolkit", package: "VerboseEquatable"),
+                
+                ///
+                .product(
+                    name: "ProperValueTypeTestToolkit",
+                    package: "ProperValueType"
+                ),
+                
+                ///
+                .product(
+                    name: "ReferenceTypeTestToolkit",
+                    package: "ReferenceType"
+                ),
+                
+                ///
+                .product(
+                    name: "VerboseEquatableTestToolkit",
+                    package: "VerboseEquatable"
+                ),
             ]
         ),
+        
+        ///
         .testTarget(
             name: "FoundationToolkit-tests",
             dependencies: ["FoundationTestToolkit"]
         ),
+        
+        ///
         .testTarget(
             name: "FoundationTestToolkit-tests",
             dependencies: ["FoundationTestToolkit"]
