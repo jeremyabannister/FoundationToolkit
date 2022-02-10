@@ -8,6 +8,15 @@
 ///
 public extension Data {
     
+    ///
+    func jsonDecoded <T: Decodable> (as type: T.Type) throws -> T {
+        try JSONDecoder().decode(type, from: self)
+    }
+}
+
+///
+public extension Data {
+    
     /// Attempts to decode the `Data` as a `String` using `String.Encoding.utf8`.
     ///
     /// This is just a handy shortcut for the slightly more verbose implementation:
