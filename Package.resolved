@@ -29,6 +29,15 @@
         }
       },
       {
+        "package": "NOTDONE",
+        "repositoryURL": "https://github.com/jeremyabannister/NOTDONE",
+        "state": {
+          "branch": null,
+          "revision": "b69d8d7e471423ba18cf3edafbbec89573f69f16",
+          "version": "0.1.0"
+        }
+      },
+      {
         "package": "ProperValueType",
         "repositoryURL": "https://github.com/jeremyabannister/ProperValueType",
         "state": {
