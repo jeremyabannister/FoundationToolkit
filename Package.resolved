@@ -6,8 +6,8 @@
         "repositoryURL": "https://github.com/jeremyabannister/CollectionConcurrencyKit",
         "state": {
           "branch": null,
-          "revision": "3f4db6ff4e039d768332c7a5fdcee7c021a147a0",
-          "version": "0.2.2"
+          "revision": "02850715b75e6cf27b0994687c7988d4ccd9b899",
+          "version": "0.2.3"
         }
       },
       {
@@ -15,8 +15,8 @@
         "repositoryURL": "https://github.com/jeremyabannister/ErrorMessage",
         "state": {
           "branch": null,
-          "revision": "1468d23676022016c33870feb501b29939ff5722",
-          "version": "0.1.1"
+          "revision": "a0b253ecbfcc8035e88e26f3b4f841ec0fe9a03d",
+          "version": "0.1.2"
         }
       },
       {
@@ -24,8 +24,8 @@
         "repositoryURL": "https://github.com/jeremyabannister/ExpressionErgonomics",
         "state": {
           "branch": null,
-          "revision": "ded628c4382757399ffe3f01bb6864b316e72fb9",
-          "version": "0.1.8"
+          "revision": "ebeff739b0c89f6e69a74d0136aea8e4f5cd256f",
+          "version": "0.2.5"
         }
       },
       {
