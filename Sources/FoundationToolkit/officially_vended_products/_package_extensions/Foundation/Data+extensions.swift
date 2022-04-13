@@ -17,6 +17,15 @@ public extension Data {
 ///
 public extension Data {
     
+    ///
+    var humanReadableDescription: String {
+        self.utf8String ?? self.description
+    }
+}
+
+///
+public extension Data {
+    
     /// Attempts to decode the `Data` as a `String` using `String.Encoding.utf8`.
     ///
     /// This is just a handy shortcut for the slightly more verbose implementation:
