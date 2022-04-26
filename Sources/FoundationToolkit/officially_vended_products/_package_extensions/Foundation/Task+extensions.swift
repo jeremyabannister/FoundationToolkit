@@ -7,6 +7,29 @@
 
 ///
 @available(iOS 13.0, macOS 10.15.0, *)
+public extension Task where Failure == Never {
+    
+    ///
+    func didComplete () async throws {
+        _ = await self.result
+    }
+}
+
+///
+@available(iOS 13.0, macOS 10.15.0, *)
+public extension Task {
+    
+    ///
+    func didComplete () async throws {
+        switch await self.result {
+        case .success: return
+        case .failure (let error): throw error
+        }
+    }
+}
+
+///
+@available(iOS 13.0, macOS 10.15.0, *)
 public extension Task
     where Success == Never,
           Failure == Never {
