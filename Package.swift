@@ -36,6 +36,12 @@ let package = Package(
         
         ///
         .package(
+            url: "https://github.com/jeremyabannister/EmptyCodableModule",
+            from: "0.1.0"
+        ),
+        
+        ///
+        .package(
             url: "https://github.com/jeremyabannister/VerboseEquatable",
             from: "0.1.4"
         ),
@@ -61,6 +67,9 @@ let package = Package(
                 
                 ///
                 "ErrorMessage",
+                
+                ///
+                "EmptyCodableModule",
                 
                 ///
                 "ProperValueType",
