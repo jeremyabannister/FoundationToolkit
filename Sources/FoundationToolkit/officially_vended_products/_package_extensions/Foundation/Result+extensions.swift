@@ -10,9 +10,14 @@ public extension Result {
     
     ///
     var successfulValue: Success? {
+        try? getSuccessfulValue()
+    }
+    
+    ///
+    func getSuccessfulValue () throws -> Success {
         switch self {
         case .success (let value): return value
-        case .failure: return nil
+        case .failure (let error): throw error
         }
     }
 }
