@@ -6,12 +6,11 @@
 //
 
 ///
-public extension Sequence where Element: Numeric,
-                                Element: _ExpressibleByBuiltinIntegerLiteral {
+public extension Sequence where Element: Numeric {
     
     ///
     func product () -> Element {
-        self.reduce(into: .init(integerLiteral: 1)) { $0 *= $1 }
+        self.reduce(into: 1, *=)
     }
 }
 
