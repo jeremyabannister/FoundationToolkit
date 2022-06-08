@@ -6,7 +6,7 @@
 //
 
 ///
-@available(iOS 13.0, macOS 10.15.0, *)
+@available(iOS 13.0, macOS 10.15.0, watchOS 6.0.0, tvOS 13.0.0, *)
 public extension Task where Failure == Never {
     
     ///
@@ -16,7 +16,7 @@ public extension Task where Failure == Never {
 }
 
 ///
-@available(iOS 13.0, macOS 10.15.0, *)
+@available(iOS 13.0, macOS 10.15.0, watchOS 6.0.0, tvOS 13.0.0, *)
 public extension Task {
     
     ///
@@ -29,7 +29,7 @@ public extension Task {
 }
 
 ///
-@available(iOS 13.0, macOS 10.15.0, *)
+@available(iOS 13.0, macOS 10.15.0, watchOS 6.0.0, tvOS 13.0.0, *)
 public extension Task
     where Success == Never,
           Failure == Never {
