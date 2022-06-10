@@ -6,7 +6,13 @@
 //
 
 ///
-@available(iOS 13.0, macOS 10.15.0, watchOS 6.0.0, tvOS 13.0.0, *)
+@available(
+    iOS 13.0,
+    macOS 10.15.0,
+    watchOS 6.0.0,
+    tvOS 13.0.0,
+    *
+)
 public extension Task where Failure == Never {
     
     ///
@@ -16,7 +22,13 @@ public extension Task where Failure == Never {
 }
 
 ///
-@available(iOS 13.0, macOS 10.15.0, watchOS 6.0.0, tvOS 13.0.0, *)
+@available(
+    iOS 13.0,
+    macOS 10.15.0,
+    watchOS 6.0.0,
+    tvOS 13.0.0,
+    *
+)
 public extension Task {
     
     ///
@@ -29,7 +41,64 @@ public extension Task {
 }
 
 ///
-@available(iOS 13.0, macOS 10.15.0, watchOS 6.0.0, tvOS 13.0.0, *)
+@available(
+    iOS 13.0,
+    macOS 10.15.0,
+    watchOS 6.0.0,
+    tvOS 13.0.0,
+    *
+)
+public extension Task
+    where Failure == Never {
+    
+    ///
+    @discardableResult
+    static func launchAfterSeconds
+        (_ delayInSeconds: TimeInterval,
+         closure: @escaping ()async->Success)
+    -> Task<Success, Never> {
+        
+        ///
+        Task<Success, Never> {
+            try? await Task<Never, Never>.sleep(seconds: delayInSeconds)
+            return await closure()
+        }
+    }
+}
+
+///
+@available(
+    iOS 13.0,
+    macOS 10.15.0,
+    watchOS 6.0.0,
+    tvOS 13.0.0,
+    *
+)
+public extension Task where Failure == Error {
+    
+    ///
+    @discardableResult
+    static func launchAfterSeconds
+        (_ delayInSeconds: TimeInterval,
+         closure: @escaping ()async throws->Success)
+    -> Task<Success, Error> {
+        
+        ///
+        Task<Success, Error> {
+            try? await Task<Never, Never>.sleep(seconds: delayInSeconds)
+            return try await closure()
+        }
+    }
+}
+
+///
+@available(
+    iOS 13.0,
+    macOS 10.15.0,
+    watchOS 6.0.0,
+    tvOS 13.0.0,
+    *
+)
 public extension Task
     where Success == Never,
           Failure == Never {
