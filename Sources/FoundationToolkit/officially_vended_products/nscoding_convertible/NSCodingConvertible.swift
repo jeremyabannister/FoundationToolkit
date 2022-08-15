@@ -25,7 +25,7 @@ public extension NSCodingConvertible {
     func encode (to encoder: Encoder) throws {
         var container = encoder.singleValueContainer()
         let data: Data
-        if #available(macOS 10.13, *) {
+        if #available(macOS 10.13, iOS 11.0, *) {
             data = try NSKeyedArchiver.archivedData(withRootObject: self.asNSCodingType, requiringSecureCoding: false)
         } else {
             data = NSKeyedArchiver.archivedData(withRootObject: self.asNSCodingType)
@@ -37,7 +37,7 @@ public extension NSCodingConvertible {
     init (from decoder: Decoder) throws {
         let container = try decoder.singleValueContainer()
         let data = try container.decode(Data.self)
-        if #available(macOS 10.13, *) {
+        if #available(macOS 10.13, iOS 11.0, *) {
             guard let value = try NSKeyedUnarchiver.unarchivedObject(ofClass: NSCodingType.self, from: data) else {
                 throw "Failed to decode data as \(Self.self): \(data.humanReadableDescription)".asErrorMessage()
             }
