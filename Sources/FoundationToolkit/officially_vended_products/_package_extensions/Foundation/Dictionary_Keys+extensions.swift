@@ -22,6 +22,39 @@ public extension Dictionary {
 }
 
 ///
+public extension Dictionary {
+    
+    ///
+    func ensuringAndMutatingValue
+        (forKey key: Key,
+         defaultValue: Value,
+         mutation: (inout Value)->())
+    -> Self {
+        
+        ///
+        self.mutated {
+            $0.ensureAndMutateValue(
+                forKey: key,
+                defaultValue: defaultValue,
+                mutation: mutation
+            )
+        }
+    }
+    
+    ///
+    mutating func ensureAndMutateValue
+        (forKey key: Key,
+         defaultValue: Value,
+         mutation: (inout Value)->()) {
+        
+        ///
+        var currentValue = self[key] ?? defaultValue
+        mutation(&currentValue)
+        self[key] = currentValue
+    }
+}
+
+///
 extension Dictionary.Keys: Hashable {
     
     ///
