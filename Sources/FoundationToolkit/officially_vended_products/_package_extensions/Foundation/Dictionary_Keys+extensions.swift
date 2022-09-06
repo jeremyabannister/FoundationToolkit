@@ -55,6 +55,37 @@ public extension Dictionary {
 }
 
 ///
+public extension Dictionary {
+    
+    ///
+    func ensuringValue
+        (forKey key: Key,
+         defaultValue: Value)
+    -> Self {
+        
+        ///
+        self
+            .mutated {
+                $0.ensureValue(
+                    forKey: key,
+                    defaultValue: defaultValue
+                )
+            }
+    }
+    
+    ///
+    mutating func ensureValue
+        (forKey key: Key,
+         defaultValue: Value) {
+        
+        ///
+        if self[key].isNil {
+            self[key] = defaultValue
+        }
+    }
+}
+
+///
 extension Dictionary.Keys: Hashable {
     
     ///
