@@ -56,6 +56,15 @@
         }
       },
       {
+        "package": "RandomlyGeneratableModule",
+        "repositoryURL": "https://github.com/jeremyabannister/RandomlyGeneratableModule",
+        "state": {
+          "branch": null,
+          "revision": "89e6dea09d0df5c464a44f00b96b6fccd0f5452d",
+          "version": "0.1.0"
+        }
+      },
+      {
         "package": "ReferenceType",
         "repositoryURL": "https://github.com/jeremyabannister/ReferenceType",
         "state": {

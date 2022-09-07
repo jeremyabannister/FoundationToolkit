@@ -10,7 +10,11 @@ public extension Data {
     
     ///
     func jsonDecoded <T: Decodable> (as type: T.Type) throws -> T {
-        try JSONDecoder().decode(type, from: self)
+        do {
+            return try JSONDecoder().decode(type, from: self)
+        } catch {
+            throw "DecodingError: \(error), Data: \(self.humanReadableDescription)".asErrorMessage()
+        }
     }
 }
 

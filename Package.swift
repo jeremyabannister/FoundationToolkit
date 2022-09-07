@@ -24,26 +24,8 @@ let package = Package(
         
         ///
         .package(
-            url: "https://github.com/jeremyabannister/ReferenceType",
-            from: "0.1.1"
-        ),
-        
-        ///
-        .package(
-            url: "https://github.com/jeremyabannister/ProperValueType",
-            from: "0.1.0"
-        ),
-        
-        ///
-        .package(
             url: "https://github.com/jeremyabannister/EmptyCodableModule",
             from: "0.1.0"
-        ),
-        
-        ///
-        .package(
-            url: "https://github.com/jeremyabannister/VerboseEquatable",
-            from: "0.1.4"
         ),
         
         ///
@@ -57,6 +39,30 @@ let package = Package(
             url: "https://github.com/jeremyabannister/NOTDONE",
             from: "0.1.0"
         ),
+        
+        ///
+        .package(
+            url: "https://github.com/jeremyabannister/ProperValueType",
+            from: "0.1.0"
+        ),
+        
+        ///
+        .package(
+            url: "https://github.com/jeremyabannister/RandomlyGeneratableModule",
+            from: "0.1.0"
+        ),
+        
+        ///
+        .package(
+            url: "https://github.com/jeremyabannister/ReferenceType",
+            from: "0.1.1"
+        ),
+        
+        ///
+        .package(
+            url: "https://github.com/jeremyabannister/VerboseEquatable",
+            from: "0.1.4"
+        ),
     ],
     targets: [
         
@@ -66,22 +72,25 @@ let package = Package(
             dependencies: [
                 
                 ///
+                "CollectionConcurrencyKit",
+                
+                ///
                 "ErrorMessage",
                 
                 ///
                 "EmptyCodableModule",
                 
                 ///
+                "NOTDONE",
+                
+                ///
                 "ProperValueType",
                 
                 ///
+                "RandomlyGeneratableModule",
+                
+                ///
                 "ReferenceType",
-                
-                ///
-                "CollectionConcurrencyKit",
-                
-                ///
-                "NOTDONE"
             ]
         ),
         
