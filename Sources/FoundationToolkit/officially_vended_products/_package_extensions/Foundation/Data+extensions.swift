@@ -9,7 +9,7 @@
 public extension Data {
     
     ///
-    func jsonDecoded <T: Decodable> (as type: T.Type) throws -> T {
+    func jsonDecoded <T: Decodable> (as type: T.Type = T.self) throws -> T {
         do {
             return try JSONDecoder().decode(type, from: self)
         } catch {
