@@ -58,6 +58,26 @@ public extension Dictionary {
 public extension Dictionary {
     
     ///
+    mutating func ensureAndReturnValue
+        (forKey key: Key,
+         defaultValue: Value)
+    -> Value {
+        
+        ///
+        self.ensureValue(
+            forKey: key,
+            defaultValue: defaultValue
+        )
+        
+        ///
+        return self[key] ?? defaultValue
+    }
+}
+
+///
+public extension Dictionary {
+    
+    ///
     func ensuringValue
         (forKey key: Key,
          defaultValue: Value)
