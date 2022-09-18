@@ -6,6 +6,27 @@
 //
 
 ///
+public extension Collection where Element: Equatable {
+    
+    ///
+    func hasPrefix
+        <C: Collection>
+        (_ prefix: C)
+    -> Bool
+    where C.Element == Self.Element {
+        
+        ///
+        prefix
+            .count
+            .isLessThanOrEqual(to: self.count)
+            .and(
+                zip(self, prefix)
+                    .allSatisfy { $0 == $1 }
+            )
+    }
+}
+
+///
 public extension Collection where Element: Hashable {
     
     /// Any collection of hashable things can be turned into a Set
