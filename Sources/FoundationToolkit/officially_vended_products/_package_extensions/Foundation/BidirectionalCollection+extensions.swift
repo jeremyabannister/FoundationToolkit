@@ -5,19 +5,6 @@
 //  Created by Jeremy Bannister on 12/9/21.
 //
 
-// MARK: - mutateLast
-
-///
-public extension BidirectionalCollection where Self: MutableCollection {
-    
-    ///
-    mutating func mutateLast (_ mutation: (inout Element)->()) {
-        guard var last = self.last else { return }
-        mutation(&last)
-        self[self.index(before: self.endIndex)] = last
-    }
-}
-
 // MARK: - Iteration "WithIndex"
 
 ///
