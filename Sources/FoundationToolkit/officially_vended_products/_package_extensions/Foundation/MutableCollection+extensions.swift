@@ -5,7 +5,7 @@
 //  Created by Jeremy Bannister on 12/9/21.
 //
 
-// MARK: - mutat(where:mutation:)
+// MARK: - mutate(where:mutation:)
 
 ///
 public extension MutableCollection {
