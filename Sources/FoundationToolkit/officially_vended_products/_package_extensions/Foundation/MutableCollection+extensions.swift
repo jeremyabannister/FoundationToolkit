@@ -9,6 +9,24 @@
 public extension MutableCollection {
     
     ///
+    func mutatingFirst (_ mutation: (inout Element)->()) -> Self {
+        var copy = self
+        copy.mutateFirst(mutation)
+        return copy
+    }
+    
+    ///
+    mutating func mutateFirst (_ mutation: (inout Element)->()) {
+        guard var first = self.first else { return }
+        mutation(&first)
+        self[startIndex] = first
+    }
+}
+
+///
+public extension MutableCollection {
+    
+    ///
     mutating func mutate
         (where predicate: (Element)->Bool,
          mutation: (inout Element)->()) {
@@ -29,12 +47,5 @@ public extension MutableCollection {
         var copy = self[index]
         mutation(&copy)
         self[index] = copy
-    }
-    
-    ///
-    mutating func mutateFirst (_ mutation: (inout Element)->()) {
-        guard var first = self.first else { return }
-        mutation(&first)
-        self[startIndex] = first
     }
 }
