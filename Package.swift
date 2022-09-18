@@ -60,6 +60,12 @@ let package = Package(
         
         ///
         .package(
+            url: "https://github.com/jeremyabannister/subscript-collection-safely",
+            from: "0.1.0"
+        ),
+        
+        ///
+        .package(
             url: "https://github.com/jeremyabannister/VerboseEquatable",
             from: "0.1.4"
         ),
@@ -91,6 +97,9 @@ let package = Package(
                 
                 ///
                 "ReferenceType",
+                
+                ///
+                "subscript-collection-safely",
             ]
         ),
         

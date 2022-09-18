@@ -14,3 +14,4 @@
 @_exported import ProperValueType
 @_exported import RandomlyGeneratableModule
 @_exported import ReferenceType
+@_exported import subscript_collection_safely
