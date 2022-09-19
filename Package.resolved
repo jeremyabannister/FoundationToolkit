@@ -33,8 +33,8 @@
         "repositoryURL": "https://github.com/jeremyabannister/ExpressionErgonomics",
         "state": {
           "branch": null,
-          "revision": "ebeff739b0c89f6e69a74d0136aea8e4f5cd256f",
-          "version": "0.2.5"
+          "revision": "be1fcd5978c4dc13548c67e5c6e6c59160d3d2c1",
+          "version": "0.3.0"
         }
       },
       {
@@ -51,8 +51,8 @@
         "repositoryURL": "https://github.com/jeremyabannister/ProperValueType",
         "state": {
           "branch": null,
-          "revision": "fff4702852d0658676da1896c93625e7ff4b0f7d",
-          "version": "0.1.0"
+          "revision": "d6c91820e1e10a749e8bbed207a3f1cf5a2e75ab",
+          "version": "0.1.1"
         }
       },
       {
@@ -74,12 +74,21 @@
         }
       },
       {
+        "package": "subscript-collection-safely",
+        "repositoryURL": "https://github.com/jeremyabannister/subscript-collection-safely",
+        "state": {
+          "branch": null,
+          "revision": "8f93263b6f112279429acfee9817a0fdbabb44b9",
+          "version": "0.1.0"
+        }
+      },
+      {
         "package": "Testable",
         "repositoryURL": "https://github.com/jeremyabannister/Testable",
         "state": {
           "branch": null,
-          "revision": "5eb6bfd344bbf0fea93cf59027a13dcb52825a47",
-          "version": "0.1.2"
+          "revision": "3d8ce23094a80bf10820668459b2659a9ede4997",
+          "version": "0.1.4"
         }
       },
       {
@@ -87,8 +96,8 @@
         "repositoryURL": "https://github.com/jeremyabannister/VerboseEquatable",
         "state": {
           "branch": null,
-          "revision": "1cc7ee4342ab5b5f6c1a2e6581fee21d2fb5ea42",
-          "version": "0.1.4"
+          "revision": "7089d4e3e775f6eee3e9752ba8b7018b250f1598",
+          "version": "0.1.5"
         }
       },
       {
@@ -96,8 +105,8 @@
         "repositoryURL": "https://github.com/jeremyabannister/XCTestToolkit",
         "state": {
           "branch": null,
-          "revision": "12e9e9cb6ae61489a5e872b7e086db9b03f2ea2e",
-          "version": "0.1.2"
+          "revision": "b564a62731a30b434d110b8d43775707a15dd227",
+          "version": "0.1.3"
         }
       }
     ]

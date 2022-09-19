@@ -67,7 +67,7 @@ let package = Package(
         ///
         .package(
             url: "https://github.com/jeremyabannister/VerboseEquatable",
-            from: "0.1.4"
+            from: "0.1.5"
         ),
     ],
     targets: [
