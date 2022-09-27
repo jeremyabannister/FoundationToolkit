@@ -28,12 +28,12 @@ public extension Dictionary {
     func ensuringAndMutatingValue
         (forKey key: Key,
          defaultValue: Value,
-         mutation: (inout Value)->())
-    -> Self {
+         mutation: (inout Value)throws->())
+    rethrows -> Self {
         
         ///
-        self.mutated {
-            $0.ensureAndMutateValue(
+        try self.mutated {
+            try $0.ensureAndMutateValue(
                 forKey: key,
                 defaultValue: defaultValue,
                 mutation: mutation
@@ -45,11 +45,12 @@ public extension Dictionary {
     mutating func ensureAndMutateValue
         (forKey key: Key,
          defaultValue: Value,
-         mutation: (inout Value)->()) {
+         mutation: (inout Value)throws->())
+    rethrows {
         
         ///
         var currentValue = self[key] ?? defaultValue
-        mutation(&currentValue)
+        try mutation(&currentValue)
         self[key] = currentValue
     }
 }
