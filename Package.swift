@@ -66,6 +66,12 @@ let package = Package(
         
         ///
         .package(
+            url: "https://github.com/jeremyabannister/String-utf8Data",
+            from: "0.1.0"
+        ),
+        
+        ///
+        .package(
             url: "https://github.com/jeremyabannister/subscript-collection-safely",
             from: "0.1.0"
         ),
@@ -106,6 +112,9 @@ let package = Package(
                 
                 ///
                 "ReferenceType",
+                
+                ///
+                "String-utf8Data",
                 
                 ///
                 "subscript-collection-safely",
