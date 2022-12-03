@@ -10,6 +10,15 @@
       }
     },
     {
+      "identity" : "data-humanreadabledescription",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jeremyabannister/Data-humanReadableDescription",
+      "state" : {
+        "revision" : "38a7f852da2ad780626fcc30af528b0ae790d4a8",
+        "version" : "0.1.0"
+      }
+    },
+    {
       "identity" : "data-utf8string",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/jeremyabannister/Data-utf8String",

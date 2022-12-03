@@ -24,6 +24,12 @@ let package = Package(
         
         ///
         .package(
+            url: "https://github.com/jeremyabannister/Data-humanReadableDescription",
+            from: "0.1.0"
+        ),
+        
+        ///
+        .package(
             url: "https://github.com/jeremyabannister/Data-utf8String",
             from: "0.1.0"
         ),
@@ -91,6 +97,9 @@ let package = Package(
                 
                 ///
                 "CollectionConcurrencyKit",
+                
+                ///
+                "Data-humanReadableDescription",
                 
                 ///
                 "Data-utf8String",

@@ -7,6 +7,7 @@
 
 ///
 @_exported import CollectionConcurrencyKit
+@_exported import Data_humanReadableDescription
 @_exported import Data_utf8String
 @_exported import EmptyCodableModule
 @_exported import ErrorMessage

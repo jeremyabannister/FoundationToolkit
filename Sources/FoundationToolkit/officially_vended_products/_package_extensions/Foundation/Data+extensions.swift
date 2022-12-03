@@ -17,12 +17,3 @@ public extension Data {
         }
     }
 }
-
-///
-public extension Data {
-    
-    ///
-    var humanReadableDescription: String {
-        self.utf8String ?? self.description
-    }
-}
