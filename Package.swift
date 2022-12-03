@@ -24,6 +24,12 @@ let package = Package(
         
         ///
         .package(
+            url: "https://github.com/jeremyabannister/Data-utf8String",
+            from: "0.1.0"
+        ),
+        
+        ///
+        .package(
             url: "https://github.com/jeremyabannister/EmptyCodableModule",
             from: "0.1.1"
         ),
@@ -79,6 +85,9 @@ let package = Package(
                 
                 ///
                 "CollectionConcurrencyKit",
+                
+                ///
+                "Data-utf8String",
                 
                 ///
                 "ErrorMessage",
