@@ -12,6 +12,7 @@
 @_exported import EmptyCodableModule
 @_exported import ErrorMessage
 @_exported import Foundation
+@_exported import JSONToolkit
 @_exported import NOTDONE
 @_exported import ProperValueType
 @_exported import RandomlyGeneratableModule

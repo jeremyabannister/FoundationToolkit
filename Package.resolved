@@ -55,6 +55,15 @@
       }
     },
     {
+      "identity" : "jsontoolkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jeremyabannister/JSONToolkit",
+      "state" : {
+        "revision" : "831dcad0477bb5259e7595c0bca69b4fb95aa9ef",
+        "version" : "0.1.0"
+      }
+    },
+    {
       "identity" : "notdone",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/jeremyabannister/NOTDONE",

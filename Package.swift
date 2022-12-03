@@ -48,6 +48,12 @@ let package = Package(
         
         ///
         .package(
+            url: "https://github.com/jeremyabannister/JSONToolkit",
+            from: "0.1.0"
+        ),
+        
+        ///
+        .package(
             url: "https://github.com/jeremyabannister/NOTDONE",
             from: "0.1.0"
         ),
@@ -109,6 +115,9 @@ let package = Package(
                 
                 ///
                 "EmptyCodableModule",
+                
+                ///
+                "JSONToolkit",
                 
                 ///
                 "NOTDONE",
