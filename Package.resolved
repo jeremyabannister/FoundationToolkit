@@ -28,6 +28,15 @@
       }
     },
     {
+      "identity" : "dummymodule",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jeremyabannister/DummyModule",
+      "state" : {
+        "revision" : "ac22680abf1e4e7916c5abf53227395f51470bb1",
+        "version" : "0.1.0"
+      }
+    },
+    {
       "identity" : "emptycodablemodule",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/jeremyabannister/EmptyCodableModule",

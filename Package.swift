@@ -36,6 +36,12 @@ let package = Package(
         
         ///
         .package(
+            url: "https://github.com/jeremyabannister/DummyModule",
+            from: "0.1.0"
+        ),
+        
+        ///
+        .package(
             url: "https://github.com/jeremyabannister/EmptyCodableModule",
             from: "0.1.1"
         ),
@@ -109,6 +115,9 @@ let package = Package(
                 
                 ///
                 "Data-utf8String",
+                
+                ///
+                "DummyModule",
                 
                 ///
                 "ErrorMessage",
