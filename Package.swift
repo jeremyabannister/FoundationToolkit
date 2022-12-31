@@ -67,7 +67,7 @@ let package = Package(
         ///
         .package(
             url: "https://github.com/jeremyabannister/ProperValueType",
-            from: "0.1.0"
+            from: "0.1.2"
         ),
         
         ///
