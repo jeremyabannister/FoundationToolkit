@@ -9,6 +9,16 @@
 public extension Set {
     
     ///
+    subscript (contains member: Element) -> Bool {
+        get { self.contains(member) }
+        set { newValue ? (_ = self.insert(member)) : (_ = self.remove(member)) }
+    }
+}
+
+///
+public extension Set {
+    
+    ///
     func mapSet
         <NewElement: Hashable>
         (_ transform: (Element)throws->NewElement)
