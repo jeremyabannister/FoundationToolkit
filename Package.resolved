@@ -41,8 +41,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/jeremyabannister/EmptyCodableModule",
       "state" : {
-        "revision" : "f796c11ca7ca1beb0d913cdd8879049969366c97",
-        "version" : "0.1.1"
+        "revision" : "9f2c354a49ca3e58d7203780df40741b1a51a0b3",
+        "version" : "0.1.2"
       }
     },
     {
@@ -68,8 +68,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/jeremyabannister/JSONToolkit",
       "state" : {
-        "revision" : "831dcad0477bb5259e7595c0bca69b4fb95aa9ef",
-        "version" : "0.1.0"
+        "revision" : "b95edb2f2b30c5d8604fb2c010908dd78652ef03",
+        "version" : "0.1.1"
       }
     },
     {
@@ -104,8 +104,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/jeremyabannister/ReferenceType",
       "state" : {
-        "revision" : "df906ebeb31f2de16e3cf6b0bc38dc903fee8361",
-        "version" : "0.1.1"
+        "revision" : "7f5e5d5278c848e286f898c459ab2c22ae9b04ab",
+        "version" : "0.1.2"
       }
     },
     {
@@ -122,8 +122,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/jeremyabannister/subscript-collection-safely",
       "state" : {
-        "revision" : "8f93263b6f112279429acfee9817a0fdbabb44b9",
-        "version" : "0.1.0"
+        "revision" : "c78fbddba5ffdf074cc9e4e2d7fab0e5ec56700e",
+        "version" : "0.1.1"
       }
     },
     {
@@ -131,8 +131,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/jeremyabannister/Testable",
       "state" : {
-        "revision" : "7a70c45c2f30f3d11b69c49c75314767166965a1",
-        "version" : "0.1.5"
+        "revision" : "d59eee3f61455d35baea4c8cd153ac342b4b3617",
+        "version" : "0.1.6"
       }
     },
     {
@@ -149,8 +149,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/jeremyabannister/XCTestToolkit",
       "state" : {
-        "revision" : "b564a62731a30b434d110b8d43775707a15dd227",
-        "version" : "0.1.3"
+        "revision" : "ad6a4de96c7ff31435afb1945f719a30edc867ad",
+        "version" : "0.1.5"
       }
     }
   ],

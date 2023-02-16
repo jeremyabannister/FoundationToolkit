@@ -43,19 +43,19 @@ let package = Package(
         ///
         .package(
             url: "https://github.com/jeremyabannister/EmptyCodableModule",
-            from: "0.1.1"
+            from: "0.1.2"
         ),
         
         ///
         .package(
             url: "https://github.com/jeremyabannister/ErrorMessage",
-            from: "0.1.1"
+            from: "0.1.2"
         ),
         
         ///
         .package(
             url: "https://github.com/jeremyabannister/JSONToolkit",
-            from: "0.1.0"
+            from: "0.1.1"
         ),
         
         ///
@@ -79,7 +79,7 @@ let package = Package(
         ///
         .package(
             url: "https://github.com/jeremyabannister/ReferenceType",
-            from: "0.1.1"
+            from: "0.1.2"
         ),
         
         ///
@@ -91,7 +91,7 @@ let package = Package(
         ///
         .package(
             url: "https://github.com/jeremyabannister/subscript-collection-safely",
-            from: "0.1.0"
+            from: "0.1.1"
         ),
         
         ///
