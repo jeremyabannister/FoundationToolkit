@@ -6,18 +6,27 @@
 //
 
 ///
-public extension Result {
+extension Result {
     
     ///
-    var successfulValue: Success? {
+    public var successfulValue: Success? {
         try? getSuccessfulValue()
     }
     
     ///
-    func getSuccessfulValue () throws -> Success {
+    public func getSuccessfulValue () throws -> Success {
         switch self {
         case .success (let value): return value
         case .failure (let error): throw error
+        }
+    }
+    
+    ///
+    public var error: (any Error)? {
+        switch self {
+        case .success: return nil
+        case .failure (let error):
+            return error
         }
     }
 }
