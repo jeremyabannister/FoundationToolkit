@@ -18,6 +18,12 @@ let package = Package(
         
         ///
         .package(
+            url: "https://github.com/jeremyabannister/Collection-sorted-by-KeyPath",
+            from: "0.1.0"
+        ),
+        
+        ///
+        .package(
             url: "https://github.com/jeremyabannister/CollectionConcurrencyKit",
             from: "0.2.2"
         ),
@@ -106,6 +112,9 @@ let package = Package(
         .target(
             name: "FoundationToolkit",
             dependencies: [
+                
+                ///
+                "Collection-sorted-by-KeyPath",
                 
                 ///
                 "CollectionConcurrencyKit",

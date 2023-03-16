@@ -1,6 +1,15 @@
 {
   "pins" : [
     {
+      "identity" : "collection-sorted-by-keypath",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jeremyabannister/Collection-sorted-by-KeyPath",
+      "state" : {
+        "revision" : "2f5aef19fc4aa9292f6e4b1cbe6e79097927ef5e",
+        "version" : "0.1.0"
+      }
+    },
+    {
       "identity" : "collectionconcurrencykit",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/jeremyabannister/CollectionConcurrencyKit",

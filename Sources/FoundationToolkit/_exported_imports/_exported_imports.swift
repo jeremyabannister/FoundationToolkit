@@ -6,6 +6,7 @@
 //
 
 ///
+@_exported import Collection_sorted_by_KeyPath
 @_exported import CollectionConcurrencyKit
 @_exported import Data_humanReadableDescription
 @_exported import Data_utf8String
