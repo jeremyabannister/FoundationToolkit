@@ -118,6 +118,15 @@
       }
     },
     {
+      "identity" : "retroactiveconformance-dictionary-error",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jeremyabannister/RetroactiveConformance-Dictionary-Error",
+      "state" : {
+        "revision" : "fcc514c988bc6bae5dedb57563d2715d830af598",
+        "version" : "0.1.0"
+      }
+    },
+    {
       "identity" : "string-utf8data",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/jeremyabannister/String-utf8Data",

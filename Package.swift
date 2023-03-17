@@ -90,6 +90,12 @@ let package = Package(
         
         ///
         .package(
+            url: "https://github.com/jeremyabannister/RetroactiveConformance-Dictionary-Error",
+            from: "0.1.0"
+        ),
+        
+        ///
+        .package(
             url: "https://github.com/jeremyabannister/String-utf8Data",
             from: "0.1.0"
         ),
@@ -148,6 +154,9 @@ let package = Package(
                 
                 ///
                 "ReferenceType",
+                
+                ///
+                "RetroactiveConformance-Dictionary-Error",
                 
                 ///
                 "String-utf8Data",
