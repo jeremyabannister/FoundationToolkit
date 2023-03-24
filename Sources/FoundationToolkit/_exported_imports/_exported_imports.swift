@@ -12,13 +12,14 @@
 @_exported import Data_utf8String
 @_exported import DummyModule
 @_exported import EmptyCodableModule
-@_exported import ErrorMessage
+@_exported import ErrorMessage_module
 @_exported import Foundation
 @_exported import JSONToolkit
 @_exported import NOTDONE
-@_exported import ProperValueType
+@_exported import ProperValueType_module
 @_exported import RandomlyGeneratableModule
-@_exported import ReferenceType
+@_exported import ReferenceType_module
 @_exported import RetroactiveConformance_Dictionary_Error
 @_exported import String_utf8Data
 @_exported import subscript_collection_safely
+@_exported import VerboseEquatable_module

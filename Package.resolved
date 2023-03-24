@@ -55,12 +55,12 @@
       }
     },
     {
-      "identity" : "errormessage",
+      "identity" : "errormessage-module",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/jeremyabannister/ErrorMessage",
+      "location" : "https://github.com/jeremyabannister/ErrorMessage-module",
       "state" : {
-        "revision" : "a0b253ecbfcc8035e88e26f3b4f841ec0fe9a03d",
-        "version" : "0.1.2"
+        "revision" : "4eea71d7b3dc1a24fb0a69871009265819ec7ec5",
+        "version" : "0.1.0"
       }
     },
     {
@@ -68,8 +68,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/jeremyabannister/ExpressionErgonomics",
       "state" : {
-        "revision" : "be1fcd5978c4dc13548c67e5c6e6c59160d3d2c1",
-        "version" : "0.3.0"
+        "revision" : "f1004f67ac975e36f7400bb13a945bae1fb5c9ec",
+        "version" : "0.3.2"
       }
     },
     {
@@ -77,8 +77,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/jeremyabannister/JSONToolkit",
       "state" : {
-        "revision" : "b95edb2f2b30c5d8604fb2c010908dd78652ef03",
-        "version" : "0.1.1"
+        "revision" : "bfd2ae144794b57b41559c49c1c1ee071b44b6af",
+        "version" : "0.1.2"
       }
     },
     {
@@ -91,12 +91,12 @@
       }
     },
     {
-      "identity" : "propervaluetype",
+      "identity" : "propervaluetype-module",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/jeremyabannister/ProperValueType",
+      "location" : "https://github.com/jeremyabannister/ProperValueType-module",
       "state" : {
-        "revision" : "5f80c61824279e0c4038159c77cc31866d220248",
-        "version" : "0.1.2"
+        "revision" : "679506a2e1280fd6b58b6e1727ef99cfaafc4d05",
+        "version" : "0.1.1"
       }
     },
     {
@@ -109,12 +109,12 @@
       }
     },
     {
-      "identity" : "referencetype",
+      "identity" : "referencetype-module",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/jeremyabannister/ReferenceType",
+      "location" : "https://github.com/jeremyabannister/ReferenceType-module",
       "state" : {
-        "revision" : "7f5e5d5278c848e286f898c459ab2c22ae9b04ab",
-        "version" : "0.1.2"
+        "revision" : "8d0528fae069b48d8e94dd07267bcf98af9b90a2",
+        "version" : "0.1.0"
       }
     },
     {
@@ -145,21 +145,21 @@
       }
     },
     {
-      "identity" : "testable",
+      "identity" : "testable-module",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/jeremyabannister/Testable",
+      "location" : "https://github.com/jeremyabannister/Testable-module",
       "state" : {
-        "revision" : "d59eee3f61455d35baea4c8cd153ac342b4b3617",
-        "version" : "0.1.6"
+        "revision" : "b0642c654d854c391c4c88ca112a8b3433028fa9",
+        "version" : "0.1.0"
       }
     },
     {
-      "identity" : "verboseequatable",
+      "identity" : "verboseequatable-module",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/jeremyabannister/VerboseEquatable",
+      "location" : "https://github.com/jeremyabannister/VerboseEquatable-module",
       "state" : {
-        "revision" : "7089d4e3e775f6eee3e9752ba8b7018b250f1598",
-        "version" : "0.1.5"
+        "revision" : "14fab6b18aad5fc80e2119465515d358c343ca26",
+        "version" : "0.1.0"
       }
     },
     {

@@ -1,7 +1,9 @@
 // swift-tools-version:5.7
 
+///
 import PackageDescription
 
+///
 let package = Package(
     name: "FoundationToolkit",
     products: [
@@ -54,14 +56,14 @@ let package = Package(
         
         ///
         .package(
-            url: "https://github.com/jeremyabannister/ErrorMessage",
-            from: "0.1.2"
+            url: "https://github.com/jeremyabannister/ErrorMessage-module",
+            from: "0.1.0"
         ),
         
         ///
         .package(
             url: "https://github.com/jeremyabannister/JSONToolkit",
-            from: "0.1.1"
+            from: "0.1.2"
         ),
         
         ///
@@ -72,8 +74,8 @@ let package = Package(
         
         ///
         .package(
-            url: "https://github.com/jeremyabannister/ProperValueType",
-            from: "0.1.2"
+            url: "https://github.com/jeremyabannister/ProperValueType-module",
+            from: "0.1.1"
         ),
         
         ///
@@ -84,8 +86,8 @@ let package = Package(
         
         ///
         .package(
-            url: "https://github.com/jeremyabannister/ReferenceType",
-            from: "0.1.2"
+            url: "https://github.com/jeremyabannister/ReferenceType-module",
+            from: "0.1.0"
         ),
         
         ///
@@ -108,8 +110,8 @@ let package = Package(
         
         ///
         .package(
-            url: "https://github.com/jeremyabannister/VerboseEquatable",
-            from: "0.1.5"
+            url: "https://github.com/jeremyabannister/VerboseEquatable-module",
+            from: "0.1.0"
         ),
     ],
     targets: [
@@ -135,7 +137,7 @@ let package = Package(
                 "DummyModule",
                 
                 ///
-                "ErrorMessage",
+                "ErrorMessage-module",
                 
                 ///
                 "EmptyCodableModule",
@@ -147,13 +149,13 @@ let package = Package(
                 "NOTDONE",
                 
                 ///
-                "ProperValueType",
+                "ProperValueType-module",
                 
                 ///
                 "RandomlyGeneratableModule",
                 
                 ///
-                "ReferenceType",
+                "ReferenceType-module",
                 
                 ///
                 "RetroactiveConformance-Dictionary-Error",
@@ -163,6 +165,9 @@ let package = Package(
                 
                 ///
                 "subscript-collection-safely",
+                
+                ///
+                "VerboseEquatable-module",
             ]
         ),
         
@@ -177,19 +182,13 @@ let package = Package(
                 ///
                 .product(
                     name: "ProperValueTypeTestToolkit",
-                    package: "ProperValueType"
+                    package: "ProperValueType-module"
                 ),
                 
                 ///
                 .product(
                     name: "ReferenceTypeTestToolkit",
-                    package: "ReferenceType"
-                ),
-                
-                ///
-                .product(
-                    name: "VerboseEquatableTestToolkit",
-                    package: "VerboseEquatable"
+                    package: "ReferenceType-module"
                 ),
             ]
         ),
@@ -197,13 +196,17 @@ let package = Package(
         ///
         .testTarget(
             name: "FoundationToolkit-tests",
-            dependencies: ["FoundationTestToolkit"]
+            dependencies: [
+                "FoundationTestToolkit",
+            ]
         ),
         
         ///
         .testTarget(
             name: "FoundationTestToolkit-tests",
-            dependencies: ["FoundationTestToolkit"]
+            dependencies: [
+                "FoundationTestToolkit",
+            ]
         ),
     ]
 )
