@@ -50,8 +50,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/jeremyabannister/EmptyCodableModule",
       "state" : {
-        "revision" : "9f2c354a49ca3e58d7203780df40741b1a51a0b3",
-        "version" : "0.1.2"
+        "revision" : "55fbd6c19795e2450cc99baaa9d897e033b576a6",
+        "version" : "0.1.4"
       }
     },
     {

@@ -51,7 +51,7 @@ let package = Package(
         ///
         .package(
             url: "https://github.com/jeremyabannister/EmptyCodableModule",
-            from: "0.1.2"
+            from: "0.1.4"
         ),
         
         ///
