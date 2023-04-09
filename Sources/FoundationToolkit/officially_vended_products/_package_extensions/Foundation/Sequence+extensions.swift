@@ -13,12 +13,3 @@ public extension Sequence where Element: Numeric {
         self.reduce(into: 1, *=)
     }
 }
-
-///
-public extension Sequence {
-    
-    /// This simply calls `self.map { $0 }` to forcibly convert this value to an `Array`.
-    var asArray: Array<Element> {
-        self.map { $0 }
-    }
-}

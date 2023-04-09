@@ -127,6 +127,15 @@
       }
     },
     {
+      "identity" : "sequence-asarray",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jeremyabannister/Sequence-asArray",
+      "state" : {
+        "revision" : "c1da5ef00a6a057f0376410517dcf82f16fc0b6e",
+        "version" : "0.1.0"
+      }
+    },
+    {
       "identity" : "string-utf8data",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/jeremyabannister/String-utf8Data",

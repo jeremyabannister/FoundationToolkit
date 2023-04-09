@@ -20,6 +20,7 @@
 @_exported import RandomlyGeneratableModule
 @_exported import ReferenceType_module
 @_exported import RetroactiveConformance_Dictionary_Error
+@_exported import Sequence_asArray
 @_exported import String_utf8Data
 @_exported import subscript_collection_safely
 @_exported import VerboseEquatable_module
