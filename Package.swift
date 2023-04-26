@@ -80,7 +80,7 @@ let package = Package(
         
         ///
         .package(
-            url: "https://github.com/jeremyabannister/RandomlyGeneratableModule",
+            url: "https://github.com/jeremyabannister/RandomlyGeneratable-module",
             from: "0.1.0"
         ),
         
@@ -158,7 +158,7 @@ let package = Package(
                 "ProperValueType-module",
                 
                 ///
-                "RandomlyGeneratableModule",
+                "RandomlyGeneratable-module",
                 
                 ///
                 "ReferenceType-module",

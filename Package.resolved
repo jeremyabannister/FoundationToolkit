@@ -100,11 +100,11 @@
       }
     },
     {
-      "identity" : "randomlygeneratablemodule",
+      "identity" : "randomlygeneratable-module",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/jeremyabannister/RandomlyGeneratableModule",
+      "location" : "https://github.com/jeremyabannister/RandomlyGeneratable-module",
       "state" : {
-        "revision" : "89e6dea09d0df5c464a44f00b96b6fccd0f5452d",
+        "revision" : "d9c78f022678459888cee34d0cb5a6534a2b4071",
         "version" : "0.1.0"
       }
     },

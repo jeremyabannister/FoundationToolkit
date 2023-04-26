@@ -17,7 +17,7 @@
 @_exported import JSONToolkit
 @_exported import NOTDONE
 @_exported import ProperValueType_module
-@_exported import RandomlyGeneratableModule
+@_exported import RandomlyGeneratable_module
 @_exported import ReferenceType_module
 @_exported import RetroactiveConformance_Dictionary_Error
 @_exported import Sequence_asArray
