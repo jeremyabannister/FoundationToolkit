@@ -14,6 +14,7 @@
 @_exported import EmptyCodableModule
 @_exported import ErrorMessage_module
 @_exported import Foundation
+@_exported import HasCustomUUIDType_module
 @_exported import JSONToolkit
 @_exported import NOTDONE
 @_exported import ProperValueType_module

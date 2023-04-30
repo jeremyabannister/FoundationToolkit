@@ -37,6 +37,15 @@
       }
     },
     {
+      "identity" : "distincttype-module",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jeremyabannister/DistinctType-module",
+      "state" : {
+        "revision" : "f6bcefa767bdfddf31f3fba0ee40a69325fb940a",
+        "version" : "0.1.2"
+      }
+    },
+    {
       "identity" : "dummymodule",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/jeremyabannister/DummyModule",
@@ -70,6 +79,15 @@
       "state" : {
         "revision" : "f1004f67ac975e36f7400bb13a945bae1fb5c9ec",
         "version" : "0.3.2"
+      }
+    },
+    {
+      "identity" : "hascustomuuidtype-module",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jeremyabannister/HasCustomUUIDType-module",
+      "state" : {
+        "revision" : "548b984e5a5fe473f37d8aaf68d9b4d9e97ac1e1",
+        "version" : "0.1.2"
       }
     },
     {

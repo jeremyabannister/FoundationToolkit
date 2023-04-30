@@ -62,6 +62,12 @@ let package = Package(
         
         ///
         .package(
+            url: "https://github.com/jeremyabannister/HasCustomUUIDType-module",
+            "0.1.2" ..< "0.2.0"
+        ),
+        
+        ///
+        .package(
             url: "https://github.com/jeremyabannister/JSONToolkit",
             from: "0.1.2"
         ),
@@ -126,56 +132,23 @@ let package = Package(
         .target(
             name: "FoundationToolkit",
             dependencies: [
-                
-                ///
                 "Collection-sorted-by-KeyPath",
-                
-                ///
                 "CollectionConcurrencyKit",
-                
-                ///
                 "Data-humanReadableDescription",
-                
-                ///
                 "Data-utf8String",
-                
-                ///
                 "DummyModule",
-                
-                ///
                 "ErrorMessage-module",
-                
-                ///
                 "EmptyCodableModule",
-                
-                ///
+                "HasCustomUUIDType-module",
                 "JSONToolkit",
-                
-                ///
                 "NOTDONE",
-                
-                ///
                 "ProperValueType-module",
-                
-                ///
                 "RandomlyGeneratable-module",
-                
-                ///
                 "ReferenceType-module",
-                
-                ///
                 "RetroactiveConformance-Dictionary-Error",
-                
-                ///
                 "Sequence-asArray",
-                
-                ///
                 "String-utf8Data",
-                
-                ///
                 "subscript-collection-safely",
-                
-                ///
                 "VerboseEquatable-module",
             ]
         ),
