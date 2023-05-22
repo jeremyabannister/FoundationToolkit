@@ -41,8 +41,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/jeremyabannister/DistinctType-module",
       "state" : {
-        "revision" : "f6bcefa767bdfddf31f3fba0ee40a69325fb940a",
-        "version" : "0.1.2"
+        "revision" : "1eb1233190cb85c51f12403f3c9cfbe94927702a",
+        "version" : "0.2.0"
       }
     },
     {
@@ -86,8 +86,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/jeremyabannister/HasCustomUUIDType-module",
       "state" : {
-        "revision" : "548b984e5a5fe473f37d8aaf68d9b4d9e97ac1e1",
-        "version" : "0.1.2"
+        "revision" : "5235444889272d59fe985f0efe801c9fc28b2e8a",
+        "version" : "0.2.0"
       }
     },
     {

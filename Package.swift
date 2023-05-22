@@ -63,7 +63,7 @@ let package = Package(
         ///
         .package(
             url: "https://github.com/jeremyabannister/HasCustomUUIDType-module",
-            "0.1.2" ..< "0.2.0"
+            "0.2.0" ..< "0.3.0"
         ),
         
         ///
