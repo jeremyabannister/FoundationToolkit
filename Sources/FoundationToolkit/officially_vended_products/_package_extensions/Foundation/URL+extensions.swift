@@ -23,7 +23,7 @@ extension URL {
             .first!
             .transform { documentsDirectoryURL in
                 subPath.reduce(into: documentsDirectoryURL) {
-                    if #available(macOS 13.0, *) {
+                    if #available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *) {
                         $0.append(path: $1)
                     } else {
                         $0.appendPathComponent($1)
