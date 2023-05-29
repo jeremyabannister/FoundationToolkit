@@ -6,6 +6,20 @@
 //
 
 ///
+extension AdditiveArithmetic where Self: Comparable {
+    
+    ///
+    public var isPositive: Bool {
+        self > .zero
+    }
+    
+    ///
+    public var isNegative: Bool {
+        self < .zero
+    }
+}
+
+///
 extension AdditiveArithmetic {
     
     ///
