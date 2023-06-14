@@ -67,3 +67,30 @@ extension Result: Codable where Success: Codable, Failure: Codable {
         case failure
     }
 }
+
+///
+extension Result {
+    
+    ///
+    public func map
+        <NewSuccess>
+        (_ transform: (Success)throws->NewSuccess)
+    throws -> Result<NewSuccess, Failure> {
+        
+        ///
+        switch self {
+            
+        ///
+        case .success (let successfulValue):
+            
+            ///
+            return try .success(transform(successfulValue))
+            
+        ///
+        case .failure (let error):
+            
+            ///
+            return .failure(error)
+        }
+    }
+}
