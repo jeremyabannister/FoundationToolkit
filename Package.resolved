@@ -77,8 +77,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/jeremyabannister/ExpressionErgonomics",
       "state" : {
-        "revision" : "66814e05fa05c557f514bf4bb070274d589624de",
-        "version" : "0.3.4"
+        "revision" : "9007bb82ef25fda3d8cf6454f91a69934b01a9c6",
+        "version" : "0.3.5"
       }
     },
     {
@@ -113,8 +113,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/jeremyabannister/ProperValueType-module",
       "state" : {
-        "revision" : "67a7791e258944a602ea5b3f7eba042a9365083f",
-        "version" : "0.1.2"
+        "revision" : "6a5f885a7e311fe595a7b8b474bf24e9887eac00",
+        "version" : "0.1.3"
       }
     },
     {
