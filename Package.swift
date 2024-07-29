@@ -75,7 +75,7 @@ let package = Package(
         ///
         .package(
             url: "https://github.com/jeremyabannister/ValueType-package",
-            "0.1.1" ..< "0.2.0"
+            "0.1.2" ..< "0.2.0"
         ),
         
         ///
