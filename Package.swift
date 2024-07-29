@@ -21,109 +21,97 @@ let package = Package(
         ///
         .package(
             url: "https://github.com/jeremyabannister/Collection-sorted-by-KeyPath",
-            from: "0.1.0"
+            "0.1.1" ..< "0.2.0"
         ),
         
         ///
         .package(
             url: "https://github.com/jeremyabannister/CollectionConcurrencyKit",
-            from: "0.2.2"
+            "0.2.4" ..< "0.3.0"
         ),
         
         ///
         .package(
             url: "https://github.com/jeremyabannister/Data-humanReadableDescription",
-            from: "0.1.0"
+            "0.1.1" ..< "0.2.0"
         ),
         
         ///
         .package(
             url: "https://github.com/jeremyabannister/Data-utf8String",
-            from: "0.1.0"
+            "0.1.1" ..< "0.2.0"
         ),
         
         ///
         .package(
-            url: "https://github.com/jeremyabannister/DummyModule",
-            from: "0.1.0"
+            url: "https://github.com/jeremyabannister/Dummy-package",
+            "0.1.0" ..< "0.2.0"
         ),
         
         ///
         .package(
-            url: "https://github.com/jeremyabannister/EmptyCodableModule",
-            from: "0.1.4"
+            url: "https://github.com/jeremyabannister/EmptyCodable-package",
+            "0.1.0" ..< "0.2.0"
         ),
         
         ///
         .package(
-            url: "https://github.com/jeremyabannister/ErrorMessage-module",
-            from: "0.1.0"
+            url: "https://github.com/jeremyabannister/ErrorMessage-package",
+            "0.1.0" ..< "0.2.0"
         ),
         
         ///
         .package(
-            url: "https://github.com/jeremyabannister/HasCustomUUIDType-module",
-            "0.2.1" ..< "0.3.0"
+            url: "https://github.com/jeremyabannister/HasCustomUUIDType-package",
+            "0.1.0" ..< "0.2.0"
         ),
         
         ///
         .package(
             url: "https://github.com/jeremyabannister/JSONToolkit",
-            from: "0.1.2"
+            "0.2.0" ..< "0.3.0"
         ),
         
         ///
         .package(
-            url: "https://github.com/jeremyabannister/NOTDONE",
-            from: "0.1.0"
+            url: "https://github.com/jeremyabannister/ValueType-package",
+            "0.1.0" ..< "0.2.0"
         ),
         
         ///
         .package(
-            url: "https://github.com/jeremyabannister/ProperValueType-module",
-            "0.1.3" ..< "0.2.0"
+            url: "https://github.com/jeremyabannister/RandomlyGeneratable-package",
+            "0.1.0" ..< "0.2.0"
         ),
         
         ///
         .package(
-            url: "https://github.com/jeremyabannister/RandomlyGeneratable-module",
-            from: "0.1.0"
-        ),
-        
-        ///
-        .package(
-            url: "https://github.com/jeremyabannister/ReferenceType-module",
-            from: "0.1.0"
-        ),
-        
-        ///
-        .package(
-            url: "https://github.com/jeremyabannister/RetroactiveConformance-Dictionary-Error",
-            from: "0.1.0"
+            url: "https://github.com/jeremyabannister/ReferenceType-package",
+            "0.1.0" ..< "0.2.0"
         ),
         
         ///
         .package(
             url: "https://github.com/jeremyabannister/Sequence-asArray",
-            from: "0.1.0"
+            "0.1.1" ..< "0.2.0"
         ),
         
         ///
         .package(
             url: "https://github.com/jeremyabannister/String-utf8Data",
-            from: "0.1.0"
+            "0.1.1" ..< "0.2.0"
         ),
         
         ///
         .package(
             url: "https://github.com/jeremyabannister/subscript-collection-safely",
-            from: "0.1.1"
+            "0.1.3" ..< "0.2.0"
         ),
         
         ///
         .package(
-            url: "https://github.com/jeremyabannister/VerboseEquatable-module",
-            from: "0.1.0"
+            url: "https://github.com/jeremyabannister/VerboseEquatable-package",
+            "0.1.0" ..< "0.2.0"
         ),
     ],
     targets: [
@@ -136,20 +124,18 @@ let package = Package(
                 "CollectionConcurrencyKit",
                 "Data-humanReadableDescription",
                 "Data-utf8String",
-                "DummyModule",
-                "ErrorMessage-module",
-                "EmptyCodableModule",
-                "HasCustomUUIDType-module",
+                .product(name: "Dummy-module", package: "Dummy-package"),
+                .product(name: "ErrorMessage-module", package: "ErrorMessage-package"),
+                .product(name: "EmptyCodable-module", package: "EmptyCodable-package"),
+                .product(name: "HasCustomUUIDType-module", package: "HasCustomUUIDType-package"),
                 "JSONToolkit",
-                "NOTDONE",
-                "ProperValueType-module",
-                "RandomlyGeneratable-module",
-                "ReferenceType-module",
-                "RetroactiveConformance-Dictionary-Error",
+                .product(name: "RandomlyGeneratable-module", package: "RandomlyGeneratable-package"),
+                .product(name: "ReferenceType-module", package: "ReferenceType-package"),
                 "Sequence-asArray",
                 "String-utf8Data",
                 "subscript-collection-safely",
-                "VerboseEquatable-module",
+                .product(name: "ValueType-module", package: "ValueType-package"),
+                .product(name: "VerboseEquatable-module", package: "VerboseEquatable-package"),
             ]
         ),
         
@@ -163,14 +149,14 @@ let package = Package(
                 
                 ///
                 .product(
-                    name: "ProperValueTypeTestToolkit",
-                    package: "ProperValueType-module"
+                    name: "ValueTypeTestToolkit",
+                    package: "ValueType-package"
                 ),
                 
                 ///
                 .product(
                     name: "ReferenceTypeTestToolkit",
-                    package: "ReferenceType-module"
+                    package: "ReferenceType-package"
                 ),
             ]
         ),

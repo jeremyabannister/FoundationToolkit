@@ -7,5 +7,5 @@
 
 ///
 @_exported import FoundationToolkit
-@_exported import ProperValueTypeTestToolkit
 @_exported import ReferenceTypeTestToolkit
+@_exported import ValueTypeTestToolkit
