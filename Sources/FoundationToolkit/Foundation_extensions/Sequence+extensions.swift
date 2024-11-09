@@ -25,12 +25,10 @@ extension Sequence where Element: Hashable {
 
 ///
 @available(iOS 13.0, macOS 10.15.0, watchOS 6.0.0, tvOS 13.0.0, *)
-extension Sequence where Element: Hashable {
+extension Sequence where Element: Hashable & Sendable {
     
     ///
-    public func asyncMakeDictionary<
-        Value
-    >(
+    public func asyncMakeDictionary<Value>(
         _ valueMap: @escaping (Element)async throws->Value
     ) async rethrows -> [Element: Value] {
         
@@ -39,10 +37,8 @@ extension Sequence where Element: Hashable {
     }
     
     ///
-    public func concurrentMakeDictionary<
-        Value
-    >(
-        _ valueMap: @escaping (Element)async throws->Value
+    public func concurrentMakeDictionary<Value: Sendable>(
+        _ valueMap: @escaping @Sendable (Element)async throws->Value
     ) async rethrows -> [Element: Value] {
         
         ///
@@ -53,9 +49,7 @@ extension Sequence where Element: Hashable {
     }
     
     ///
-    public func asyncMakeCompactDictionary<
-        Value
-    >(
+    public func asyncMakeCompactDictionary<Value>(
         _ valueMap: (Element)async throws->Value?
     ) async rethrows -> [Element: Value] {
         
@@ -67,9 +61,7 @@ extension Sequence where Element: Hashable {
     }
     
     ///
-    public func concurrentMakeCompactDictionary<
-        Value
-    >(
+    public func concurrentMakeCompactDictionary<Value>(
         _ valueMap: (Element)async throws->Value?
     ) async rethrows -> [Element: Value] {
         
@@ -83,7 +75,7 @@ extension Sequence where Element: Hashable {
 
 ///
 @available(iOS 13.0, macOS 10.15.0, watchOS 6.0.0, tvOS 13.0.0, *)
-extension Sequence {
+extension Sequence where Element: Sendable {
     
     ///
     public func asyncMakeDictionary<
@@ -103,11 +95,11 @@ extension Sequence {
     
     ///
     public func concurrentMakeDictionary<
-        Key: Hashable,
-        Value
+        Key: Hashable & Sendable,
+        Value: Sendable
     >(
-        key keyMap: @escaping (Element) async throws -> Key,
-        value valueMap: @escaping (Element) async throws -> Value
+        key keyMap: @escaping @Sendable (Element) async throws -> Key,
+        value valueMap: @escaping @Sendable (Element) async throws -> Value
     ) async rethrows -> [Key: Value] {
         
         ///
@@ -139,11 +131,11 @@ extension Sequence {
     
     /// Turn any Collection into a Dictionary by transforming each element into both an optional key and an optional value. If either the key or the value is nil, nothing is added to the result and the element is skipped
     public func concurrentMakeCompactDictionary<
-        Key: Hashable,
-        Value
+        Key: Hashable & Sendable,
+        Value: Sendable
     >(
-        key keyMap: @escaping (Element) async throws -> Key?,
-        value valueMap: @escaping (Element) async throws -> Value?
+        key keyMap: @escaping @Sendable (Element) async throws -> Key?,
+        value valueMap: @escaping @Sendable (Element) async throws -> Value?
     ) async rethrows -> [Key: Value] {
         
         ///
@@ -191,9 +183,7 @@ extension Sequence where Element: Hashable {
     /// Creates a dictionary by iterating over all elements and mapping each one to a value, then storing that value in the new dictionary using the element as the key.
     ///
     /// - Parameter mapping: The transform function which takes in an element of the receiver and returns the corresponding value which should be stored in the new dictionary.
-    public func makeDictionary<
-        Value
-    >(
+    public func makeDictionary<Value>(
         _ valueMap: (Element)throws->Value
     ) rethrows -> [Element: Value] {
         
@@ -205,9 +195,7 @@ extension Sequence where Element: Hashable {
     }
     
     ///
-    public func makeCompactDictionary<
-        Value
-    >(
+    public func makeCompactDictionary<Value>(
         _ valueMap: (Element)throws->Value?
     ) rethrows -> [Element: Value] {
         
@@ -223,9 +211,7 @@ extension Sequence where Element: Hashable {
 extension Sequence {
     
     /// Returns a dictionary containing the elements of this sequence, keyed by the hashable value found for each element at the given key path.
-    public func makeDictionary<
-        Key: Hashable
-    >(
+    public func makeDictionary<Key: Hashable>(
         key keyPath: KeyPath<Element, Key>
     ) -> [Key: Element] {
         
@@ -237,9 +223,7 @@ extension Sequence {
     }
     
     /// Returns a dictionary containing some of the elements of this sequence, keyed by the hashable value found for each element at the given key path, if it was not nil.
-    public func makeDictionary<
-        Key: Hashable
-    >(
+    public func makeDictionary<Key: Hashable>(
         key keyPath: KeyPath<Element, Key?>
     ) -> [Key: Element] {
         

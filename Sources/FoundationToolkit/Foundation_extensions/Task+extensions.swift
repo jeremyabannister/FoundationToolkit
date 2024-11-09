@@ -53,7 +53,7 @@ extension Task where Failure == Error {
     @discardableResult
     public static func launchAfterSeconds(
         _ delayInSeconds: TimeInterval,
-        closure: @escaping ()async throws->Success
+        closure: sending @escaping ()async throws->Success
     ) -> Task<Success, Error> {
         
         ///

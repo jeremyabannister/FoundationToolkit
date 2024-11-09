@@ -1,9 +1,7 @@
-// swift-tools-version:5.7
+// swift-tools-version:6.0
 
-///
 import PackageDescription
 
-///
 let package = Package(
     name: "FoundationToolkit",
     products: [
@@ -17,106 +15,72 @@ let package = Package(
         ),
     ],
     dependencies: [
-        
-        ///
         .package(
             url: "https://github.com/jeremyabannister/Collection-sorted-by-KeyPath",
-            "0.1.1" ..< "0.2.0"
+            .upToNextMinor(from: "0.1.2")
         ),
-        
-        ///
         .package(
             url: "https://github.com/jeremyabannister/CollectionConcurrencyKit",
-            "0.2.4" ..< "0.3.0"
+            .upToNextMinor(from: "0.2.5")
         ),
-        
-        ///
         .package(
             url: "https://github.com/jeremyabannister/Data-humanReadableDescription",
-            "0.1.1" ..< "0.2.0"
+            .upToNextMinor(from: "0.1.2")
         ),
-        
-        ///
         .package(
             url: "https://github.com/jeremyabannister/Data-utf8String",
-            "0.1.1" ..< "0.2.0"
+            .upToNextMinor(from: "0.1.2")
         ),
-        
-        ///
         .package(
             url: "https://github.com/jeremyabannister/Dummy-package",
-            "0.1.0" ..< "0.2.0"
+            .upToNextMinor(from: "0.1.1")
         ),
-        
-        ///
         .package(
             url: "https://github.com/jeremyabannister/EmptyCodable-package",
-            "0.1.0" ..< "0.2.0"
+            .upToNextMinor(from: "0.1.1")
         ),
-        
-        ///
         .package(
             url: "https://github.com/jeremyabannister/ErrorMessage-package",
-            "0.1.0" ..< "0.2.0"
+            .upToNextMinor(from: "0.1.2")
         ),
-        
-        ///
         .package(
             url: "https://github.com/jeremyabannister/HasCustomUUIDType-package",
-            "0.1.0" ..< "0.2.0"
+            .upToNextMinor(from: "0.1.1")
         ),
-        
-        ///
         .package(
             url: "https://github.com/jeremyabannister/JSONToolkit",
-            "0.2.0" ..< "0.3.0"
+            .upToNextMinor(from: "0.2.1")
         ),
-        
-        ///
         .package(
             url: "https://github.com/jeremyabannister/ValueType-package",
-            "0.1.4" ..< "0.2.0"
+            .upToNextMinor(from: "0.1.5")
         ),
-        
-        ///
         .package(
             url: "https://github.com/jeremyabannister/RandomlyGeneratable-package",
-            "0.1.0" ..< "0.2.0"
+            .upToNextMinor(from: "0.1.1")
         ),
-        
-        ///
         .package(
             url: "https://github.com/jeremyabannister/ReferenceType-package",
-            "0.1.0" ..< "0.2.0"
+            .upToNextMinor(from: "0.1.1")
         ),
-        
-        ///
         .package(
             url: "https://github.com/jeremyabannister/Sequence-asArray",
-            "0.1.1" ..< "0.2.0"
+            .upToNextMinor(from: "0.1.2")
         ),
-        
-        ///
         .package(
             url: "https://github.com/jeremyabannister/String-utf8Data",
-            "0.1.1" ..< "0.2.0"
+            .upToNextMinor(from: "0.1.2")
         ),
-        
-        ///
         .package(
             url: "https://github.com/jeremyabannister/subscript-collection-safely",
-            "0.1.3" ..< "0.2.0"
+            .upToNextMinor(from: "0.1.4")
         ),
-        
-        ///
         .package(
             url: "https://github.com/jeremyabannister/VerboseEquatable-package",
-            "0.1.0" ..< "0.2.0"
+            .upToNextMinor(from: "0.1.1")
         ),
     ],
     targets: [
-        
-        ///
         .target(
             name: "FoundationToolkit",
             dependencies: [
@@ -138,38 +102,26 @@ let package = Package(
                 .product(name: "VerboseEquatable-module", package: "VerboseEquatable-package"),
             ]
         ),
-        
-        ///
         .target(
             name: "FoundationTestToolkit",
             dependencies: [
-                
-                ///
                 "FoundationToolkit",
-                
-                ///
                 .product(
                     name: "ValueTypeTestToolkit",
                     package: "ValueType-package"
                 ),
-                
-                ///
                 .product(
                     name: "ReferenceTypeTestToolkit",
                     package: "ReferenceType-package"
                 ),
             ]
         ),
-        
-        ///
         .testTarget(
             name: "FoundationToolkit-tests",
             dependencies: [
                 "FoundationTestToolkit",
             ]
         ),
-        
-        ///
         .testTarget(
             name: "FoundationTestToolkit-tests",
             dependencies: [
