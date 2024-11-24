@@ -61,7 +61,7 @@ let package = Package(
         ),
         .package(
             url: "https://github.com/jeremyabannister/ReferenceType-package",
-            .upToNextMinor(from: "0.1.1")
+            .upToNextMinor(from: "0.1.2")
         ),
         .package(
             url: "https://github.com/jeremyabannister/Sequence-asArray",
