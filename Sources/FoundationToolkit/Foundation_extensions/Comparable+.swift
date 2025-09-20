@@ -8,8 +8,8 @@ extension Comparable {
     ) -> Self {
         
         ///
-        guard self > lowerBound ?? self else { return lowerBound ?? self }
-        guard self < upperBound ?? self else { return upperBound ?? self }
+        guard self >= lowerBound ?? self else { return lowerBound ?? self }
+        guard self <= upperBound ?? self else { return upperBound ?? self }
         return self
     }
     
