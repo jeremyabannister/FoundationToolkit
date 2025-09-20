@@ -26,6 +26,16 @@ extension Comparable {
     }
     
     ///
+    public func clamped(to range: PartialRangeFrom<Self>) -> Self {
+        self.clamped(to: range.lowerBound, nil)
+    }
+    
+    ///
+    public func clamped(to range: PartialRangeThrough<Self>) -> Self {
+        self.clamped(to: nil, range.upperBound)
+    }
+    
+    ///
     public mutating func clamp(
         to lowerBound: Self?,
         _ upperBound: Self?
@@ -42,5 +52,15 @@ extension Comparable {
         
         ///
         self = self.clamped(to: limits)
+    }
+    
+    ///
+    public mutating func clamp(to range: PartialRangeFrom<Self>) {
+        self.clamp(to: range.lowerBound, nil)
+    }
+    
+    ///
+    public mutating func clamp(to range: PartialRangeThrough<Self>) {
+        self.clamp(to: nil, range.upperBound)
     }
 }
